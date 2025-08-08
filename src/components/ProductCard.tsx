@@ -28,19 +28,7 @@ const ProductCard = ({ image, name, category, price, rating = 0 }: ProductCardPr
       </div>
       
       <div className="p-6">
-        {/* Rating */}
-        <div className="flex items-center gap-1 mb-2">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <Star 
-              key={star} 
-              className={`w-4 h-4 ${
-                star <= rating 
-                  ? "fill-yellow-400 text-yellow-400" 
-                  : "text-gray-300"
-              }`} 
-            />
-          ))}
-        </div>
+       
         
         <h3 className="font-semibold text-lg mb-1 text-foreground">
           {name}
